@@ -1,0 +1,8 @@
+<launch>
+
+	<node pkg="rviz" type="rviz" name="rviz" args="-d $(find orb_slam_ros)/orb_viz.rviz" output="log"/>
+
+ 	<node pkg="orb_slam_ros" type="mono_node" name="orb_slam_ros"  
+        args="/home/razer/orb_slam_ros/Vocabulary/ORBvoc.txt /home/razer/orb_slam_ros/config/mono.yaml" cwd="node" output="screen"/>
+
+</launch>
